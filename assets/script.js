@@ -16,7 +16,7 @@ $(function () {
 
   const search = async (city) => {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`
     )
       .then(function (response) {
         return response.json();
